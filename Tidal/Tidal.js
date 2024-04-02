@@ -37,19 +37,24 @@ const server = "https://free.yuhengy17.me",
     });
   }),
   done = () => {
-    $.hasReqBody() ? $.isQuanX() ? $.done({
-      "status": $.response.status,
+    $.done({
+      "status": 200,
       "headers": $.response.headers,
       "body": $.response.body
-    }) : $.done({
-      "response": {
-        "status": 200,
-        "headers": $.response.headers,
-        "body": $.response.body
-      }
-    }) : $.done({
-      "body": $.response.body
     });
+    // $.hasReqBody() ? $.isQuanX() ? $.done({
+    //   "status": $.response.status,
+    //   "headers": $.response.headers,
+    //   "body": $.response.body
+    // }) : $.done({
+    //   "response": {
+    //     "status": 200,
+    //     "headers": $.response.headers,
+    //     "body": $.response.body
+    //   }
+    // }) : $.done({
+    //   "body": $.response.body
+    // });
   };
 !(async () => {
   await httpRequest();
