@@ -1,4 +1,3 @@
-// https://github.com/sve1r/Rules-For-Quantumult-X/blob/main/Scripts/Unlock/Notability.js
-let obj = JSON.parse($response.body);
-obj = {"data":{"processAppleReceipt":{"__typename":"SubscriptionResult","error":0,"subscription":{"__typename":"AppStoreSubscription","status":"active","originalPurchaseDate":"2021-11-09T03:14:18.000Z","originalTransactionId":"710000869822929","expirationDate":"2099-12-31T03:14:17.000Z","productId":"com.gingerlabs.Notability.premium_subscription","tier":"premium","refundedDate":null,"refundedReason":null,"user":null}}}};
-$done({body: JSON.stringify(obj)});
+// https://raw.githubusercontent.com/chxm1023/Rewrite/main/notability.js
+
+var chxm1023=JSON.parse($response.body);chxm1023={data:{processAppleReceipt:{error:0,subscription:{productId:"com.gingerlabs.Notability.premium_subscription",originalTransactionId:"570001184068302",tier:"premium",refundedDate:null,refundedReason:null,isInBillingRetryPeriod:!1,expirationDate:"2099-09-09T09:09:09.000Z",gracePeriodExpiresAt:null,overDeviceLimit:!1,expirationIntent:null,__typename:"AppStoreSubscription",user:null,status:"canceled",originalPurchaseDate:"2022-09-09T09:09:09.000Z"},__typename:"SubscriptionResult"}}},$done({body:JSON.stringify(chxm1023)});
