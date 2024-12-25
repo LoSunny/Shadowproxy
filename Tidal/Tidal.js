@@ -2,6 +2,6 @@
 
 console.log('hello');
 console.log(Object.entries($request));
-console.log($request);
+console.log(JSON.stringify($request));
 console.log($request.url);
 console.log('End');
