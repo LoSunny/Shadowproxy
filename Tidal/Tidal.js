@@ -7,7 +7,7 @@ $.hasReqBody = () => typeof $request !== "undefined";
 $.response = {
   "body": $.hasReqBody() ? "{}" : $response.body
 };
-const server = "https://free.yuhengy17.me",
+const server = "https://tidal.401658.xyz",
   interface_id = "tidal",
   defaultReq = () => new Promise((resolve, reject) => {
     $.post({
